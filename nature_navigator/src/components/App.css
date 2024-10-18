@@ -1,0 +1,439 @@
+/* src/App.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light grey background */
+    background: url('/public/bg.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire area */
+  }
+  
+  h1 {
+    color: #0b5821; /* Dark teal */
+  }
+  
+  h2 {
+    color: #00796b; /* Slightly darker teal */
+  }
+  
+  p {
+    color: #333; /* Darker text for readability */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(11, 105, 57, 0.7);/* Dark teal */
+    opacity:0.8;
+    padding: 10px;
+    border-radius: 10px;
+    position: sticky; /* Sticks to the top */
+    top: 0; /* Aligns with the top */
+    z-index: 1000; /* Ensures it stays above other content */
+  }
+  
+  .navbar ul {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition */
+    z-index:0;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+/* Navbar styles */
+
+.navbar-left {
+  display: flex; /* Use flex to align children horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+
+.project-name {
+  color: #e7ea07; /* Project name color */
+  margin: 0; /* Remove default margin */
+  font-size:25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  
+}
+
+.logo {
+  width: 100px; /* Adjust logo width as needed */
+  height: 70px; /* Maintain aspect ratio */
+   /* Space from the left */
+  
+}
+.model-info-container {
+  padding: 25px;
+  margin-right:200px auto;
+  border-radius: 10px;
+  max-width: 1500px;
+  background-color: #e0f7fa; /* Light cyan for Home */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* App.css */
+.home-container {
+  max-width: 1500px; /* Maximum width for the homepage */
+  margin: auto; /* Center the container */
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #e0f7fa; /* Light cyan for Home */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.benefit-carousel-container {
+  display: flex; /* Flexbox to arrange items horizontally */
+  justify-content: space-between; /* Space between the sections */
+  margin-top: 20px; /* Space above */
+}
+
+.who-can-benefit {
+  flex: 1; /* Left side: Who Can Benefit section */
+  margin-right: 20px; /* Space between sections */
+  padding: 15px; /* Padding inside section */
+  /* Optional border for visibility */
+  border-radius: 5px; /* Rounded corners */
+   /* White background for clarity */
+}
+
+.carousel-container {
+  flex: 1; /* Right side: Carousel section */
+  /*display: flex; /* Flexbox to layout images vertically */
+  flex-direction: column; /* Arrange carousel vertically */
+  align-items: center; /* Center items horizontally */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.carousel-controls {
+  display: flex; /* Flexbox for buttons */
+  justify-content: space-between; /* Space between buttons */
+  width: 100%; /* Full width of the carousel */
+  margin-bottom: 10px; /* Space below buttons */
+}
+
+.carousel-item-container {
+  display: flex; /* Flexbox to allow horizontal scrolling */
+  transition: transform 0.5s ease-in-out; /* Smooth transition for scrolling */
+  max-height:300px ;
+  min-width: 300px;
+}
+
+.carousel-item {
+  /* Each item takes full width */
+  opacity: 0; /* Hide items by default */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+  display: flex; /* Allow flex properties */
+  flex-direction: column; /* Stack image and caption */
+  align-items: center; /* Center the content */
+}
+
+.carousel-item.active {
+  opacity: 1; /* Show active item */
+}
+
+.carousel-image {
+ /* Ensure images are responsive */
+  max-width: 500px; /* Maximum width of the image */
+  height: 400; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: Add border radius */
+}
+
+.carousel-caption {
+  text-align: center; /* Center the caption */
+  margin-top: 5px; /* Space above caption */
+}
+
+/* Additional styles for testimonials or other components */
+.testimonial {
+  margin-top: 20px; /* Space above testimonial */
+  padding: 10px; /* Padding for testimonial */
+  background-color: #f8f9fa; /* Light background for emphasis */
+  border-radius: 5px; /* Rounded corners */
+}
+
+
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.card-deck {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Responsive wrapping */
+}
+
+.feature-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 10px; /* Space between cards */
+  flex: 1 0 45%; /* Responsive width */
+}
+
+.feature-card:hover {
+  transform: scale(1.05); /* Slightly grow on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+
+  /* Additional styling for mobile responsiveness */
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column; /* Stacks navbar items vertically on small screens */
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .home-container, .model-info-container {
+      padding: 15px;
+      margin: 10px;
+    }
+  }
+  /* ModelInfo.css */
+.model-info-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+}
+
+.title {
+  color: #2c3e50;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 18px;
+  color: #34495e;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.sub-title {
+  font-size: 24px;
+  color: #2980b9;
+  margin-bottom: 10px;
+}
+
+.model-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.model-details li {
+  font-size: 18px;
+  color: #2c3e50;
+  margin: 8px 0;
+}
+
+.comparison-table {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-table th, .comparison-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.comparison-table th {
+  background-color: #2980b9;
+  color: white;
+}
+
+.comparison-table td {
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.image-container2 {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.graph-image {
+  width: 45%;
+  border: 2px solid #ecf0f1;
+  border-radius: 5px;
+}
+
+.conclusion {
+  margin-top: 20px;
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.home-container {
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+.welcome-section {
+  background: url('/public/bg.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 50px 0;
+}
+
+.carousel img {
+  height: 400px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Home Container */
+.home-container {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+.nav-link {
+  margin-right: 15px;
+  color: #007bff;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #0056b3;
+}
+
+/* Carousel */
+.carousel-inner img {
+  height: 400px; /* Set a fixed height for images */
+}
+
+/* Welcome Section */
+.welcome-section {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+/* Features Section */
+#features {
+  padding: 50px 0;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card img {
+  height: 200px; /* Set a fixed height for card images */
+}
+
+/* About Section */
+#about {
+  padding: 50px 0;
+}
+
+#about h2 {
+  margin-bottom: 20px;
+}
+
+#about ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#about li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .welcome-section h1 {
+    font-size: 2rem;
+  }
+
+  .nav-link {
+    margin-right: 10px;
+  }
+}

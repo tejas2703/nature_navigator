@@ -1,0 +1,39 @@
+{
+    "Hornbill": {
+      "description": "Hornbills are known for their distinctive, large, curved bills and are found in tropical and subtropical forests, grasslands, and savannas. They play an important ecological role as seed dispersers.",
+      "image": "/hornbillnew.jpg",
+      "habitat": "Tropical and subtropical forests, grasslands, and savannas",
+      "behavior": "Hornbills are generally arboreal and are notable for their breeding behavior, where females seal themselves inside tree cavities during incubation.",
+      "conservation_status": "Vulnerable",
+      "diet": "Omnivores – primarily feed on fruits, but also eat insects, small animals, and other plant matter.",
+      "scientific_name": "Bucerotidae"
+    },
+    "Albatros": {
+      "description": "Albatrosses are large seabirds renowned for their long wingspans and the ability to glide vast distances. They are found mostly in the Southern Ocean and North Pacific.",
+      "image": "/albatrosnew.jpg",
+      "habitat": "Oceans and coastal regions, primarily Southern Ocean and North Pacific",
+      "behavior": "Albatrosses are known for their extensive flight abilities, gliding over ocean waters and using dynamic soaring to cover large distances with minimal energy.",
+      "conservation_status": "Endangered (many species)",
+      "diet": "Carnivores – primarily feed on squid, fish, and krill.",
+      "scientific_name": "Diomedeidae"
+    },
+    "Flying_Fox": {
+      "description": "Flying foxes are the largest bats in the world and are found in tropical and subtropical regions. They feed on fruits, flowers, and nectar and are important pollinators.",
+      "image": "/flyingfox.jpg",
+      "habitat": "Tropical and subtropical forests, coastal regions",
+      "behavior": "Flying foxes roost in large colonies in trees and are nocturnal. They play a key role in pollination and seed dispersal for many plants.",
+      "conservation_status": "Varies by species (many are threatened due to habitat loss)",
+      "diet": "Frugivores – primarily feed on fruits, nectar, and flowers.",
+      "scientific_name": "Pteropus"
+    },
+    "African_Lion": {
+      "description": "The African lion is a large carnivorous mammal that lives in prides and is found primarily in sub-Saharan Africa. It is one of the most well-known animal species in the world.",
+      "image": "/africanlion.jpg",
+      "habitat": "Savannas, grasslands, and open woodlands of sub-Saharan Africa",
+      "behavior": "Lions are social animals living in groups called prides. They hunt cooperatively and are apex predators, primarily targeting large herbivores.",
+      "conservation_status": "Vulnerable",
+      "diet": "Carnivores – feed on large mammals like zebras, antelopes, and wildebeests.",
+      "scientific_name": "Panthera leo"
+    }
+  }
+  

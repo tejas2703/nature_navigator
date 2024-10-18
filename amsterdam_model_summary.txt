@@ -1,0 +1,9 @@
+Latitude Predictions Evaluation:
+MAE: 1.4628670294449715
+RMSE: 2.038056023579694
+
+Longitude Predictions Evaluation:
+MAE: 2.19258744316346
+RMSE: 2.910610994284607
+
+Predicted Future Location (Latitude, Longitude): (-37.86331834000002, 77.69082600499988)
